@@ -1,0 +1,9 @@
+requests
+bs4
+sentence_transformers
+pinecone
+langchain
+langchain-groq
+langchain-openai
+streamlit
+
