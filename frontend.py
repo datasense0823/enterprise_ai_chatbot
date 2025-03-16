@@ -31,7 +31,7 @@ st.markdown("---")
 
 # -------------------------- PINECONE SETUP -------------------------
 pc = Pinecone(api_key=os.getenv("PINECONE_API_KEY"))
-index_name = "ragchat"
+index_name = "ragchatbot"
 index = pc.Index(index_name)
 
 # -------------------------- SCRAPE AND CHUNK -------------------------

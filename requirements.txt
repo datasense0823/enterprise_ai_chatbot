@@ -6,4 +6,7 @@ langchain
 langchain-groq
 langchain-openai
 streamlit
+fastapi
+uvicorn
+python-dotenv
 
