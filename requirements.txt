@@ -9,4 +9,5 @@ streamlit
 fastapi
 uvicorn
 python-dotenv
+requests
 
