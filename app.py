@@ -2,6 +2,7 @@
 
 import streamlit as st
 import requests
+import os
 
 st.set_page_config(page_title="⚙️ AI Chat with Scraped Data - Powered by DataSense", page_icon="🧠", layout="wide")
 st.title("⚙️ AI Chat with Scraped Data - Powered by DataSense")
@@ -15,7 +16,7 @@ with st.sidebar:
 
 st.subheader("💬 Ask Your Question")
 query = st.text_input("Type your question below 👇", placeholder="E.g., What is this book about?")
-API_URL = "http://localhost:8000/query"  # Change in production
+API_URL = os.getenv("BACKEND_URL", "http://localhost:8000/query") # Change in production
 
 def get_answer_from_backend(question, top_k):
     try:
