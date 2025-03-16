@@ -11,7 +11,7 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose ports for FastAPI and Streamlit
-EXPOSE 8000 8501
+EXPOSE  8501
 
 # Make entrypoint script executable
 RUN chmod +x /app/entrypoint.sh
